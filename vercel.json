@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "chatbot_openai_api",
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
+    ],
+    "alias": "your-custom-domain.com"
+}
